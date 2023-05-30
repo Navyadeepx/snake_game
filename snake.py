@@ -1,5 +1,6 @@
 from tkinter import *
 import random
+import time
 root = Tk()
 #window
 root.geometry("800x800")
@@ -31,6 +32,8 @@ if cord[0]==x and cord[1]==y:
 	y=(y+1)//1
 snake=Label(mainframe,text="",bg='green')
 snake.grid(row=x,column=y,sticky="NEWS")
+cord=(x,y)
+#snake movement
 #high score
 hs=Label(root, text='high score:',padx=10)
 hs.grid(row=0,column=0,sticky='w')
